@@ -36,7 +36,12 @@ public class LAB1 {
         Polinom myPolinom2 = new Polinom(mySet2);
         Polinom myPolinom3 = new Polinom(mySet3);
 
-
+        System.out.println("1st polinom: " + myPolinom1);
+        System.out.println("2nd polinom: " + myPolinom2);
         myPolinom1.addPolinom(myPolinom2);
+        System.out.println("Their summ: " +  myPolinom1);
+        System.out.println("and then + 3rd polinom: " + myPolinom3);
+        myPolinom1.addPolinom(myPolinom3);
+        System.out.println("Answer : " + myPolinom1 );
     }
 }

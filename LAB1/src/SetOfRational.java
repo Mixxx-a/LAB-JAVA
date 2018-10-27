@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class SetOfRational {
     private ArrayList<Rational> rationallist;
 
@@ -64,7 +65,7 @@ public class SetOfRational {
     int lowerThanFriction(Rational friction) {
         int counter = 0;
         double value = friction.getValue();
-        for (int i = 0; i < rationallist.size(); i++) {  // using for
+        for (int i = 0; i < rationallist.size(); i++) {  // using 'for'
             if (rationallist.get(i).getValue() < value)
                 counter++;
         }
