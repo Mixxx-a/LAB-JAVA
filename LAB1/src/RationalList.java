@@ -35,7 +35,7 @@ public class RationalList {
     Rational maxFractionInSet() {
         Rational Maximum = rationallist.get(0);
         for (int i = 1; i < rationallist.size(); i++) {
-            if (rationallist.get(i).getValue() > Maximum.getValue()) {
+            if ((rationallist.get(i).compareTo(Maximum)) > 0) {
                 Maximum = rationallist.get(i);
             }
         }
@@ -45,7 +45,7 @@ public class RationalList {
     Rational minFractionInSet() {
         Rational Minimum = rationallist.get(0);
         for (int i = 1; i < rationallist.size(); i++) {
-            if (rationallist.get(i).getValue() < Minimum.getValue()) {
+            if ((rationallist.get(i).compareTo(Minimum)) < 0) {
                 Minimum = rationallist.get(i);
             }
         }
@@ -54,9 +54,8 @@ public class RationalList {
 
     int higherThanFraction(Rational fraction) {
         int counter = 0;
-        double value = fraction.getValue();
         for (Rational item : rationallist) {  // using foreach
-            if (item.getValue() > value)
+            if ((item.compareTo(fraction)) > 0)
                 counter++;
         }
         return counter;
@@ -64,9 +63,8 @@ public class RationalList {
 
     int lowerThanFraction(Rational fraction) {
         int counter = 0;
-        double value = fraction.getValue();
         for (int i = 0; i < rationallist.size(); i++) {  // using 'for'
-            if (rationallist.get(i).getValue() < value)
+            if((rationallist.get(i).compareTo(fraction)) < 0)
                 counter++;
         }
         return counter;

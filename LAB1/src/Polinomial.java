@@ -21,15 +21,19 @@ public class Polinomial {
     @Override
     public String toString() {
         String ans = "";
+        boolean emptystringflag = true;
         if (this.size() > 0) {
             ans += zeroDegreeFraction(this.getFractionI(0));
-            for (int i = 1; i < this.size(); i++)
-                ans += fractionInPolinom(this.getFractionI(i), i);
+            for (int i = 1; i < this.size(); i++) {
+                if (!(ans.equals("")))
+                    emptystringflag = false;
+                ans += fractionInPolinom(this.getFractionI(i), i, emptystringflag);
+            }
         }
        return ans;
     }
 
-    private String zeroDegreeFraction (Rational fraction, Rational nextfraction) {
+    private String zeroDegreeFraction (Rational fraction) {
         String stringfraction = "";
         if (fraction.getNumerator() == 0)
             return "";
@@ -46,28 +50,37 @@ public class Polinomial {
         return stringfraction;
     }
 
-    private String fractionInPolinom (Rational fraction, int degree) {
+    private String fractionInPolinom (Rational fraction, int degree, boolean flag) {
         String stringfraction = "";
         if (fraction.getNumerator() == 0)
             return "";
 
-        if (fraction.getNumerator() > 0)
-            stringfraction += " + ";
-        else
-            stringfraction += " - ";
-
-        if (fraction.getDenomirator() == 1)
-            stringfraction += Math.abs(fraction.getNumerator());
+        if (flag) {
+            if (fraction.getNumerator() < 0)
+                stringfraction += " - ";
+        }
         else {
-            stringfraction = stringfraction + Math.abs(fraction.getNumerator()) + "/" + fraction.getDenomirator();
+            if (fraction.getNumerator() > 0)
+                stringfraction += " + ";
+            else
+                stringfraction += " - ";
+        }
+
+        if (fraction.getDenomirator() == 1) {
+            if (Math.abs(fraction.getNumerator()) != 1)
+                stringfraction = stringfraction + Math.abs(fraction.getNumerator()) + " * ";
+        }
+        else {
+            stringfraction = stringfraction + Math.abs(fraction.getNumerator()) + "/" + fraction.getDenomirator() + " * ";
         }
 
         switch (degree) {
             case 1: {
-                stringfraction += " * x";
+                stringfraction += "x";
+                break;
             }
             default:
-                stringfraction = stringfraction + "* x^" + degree;
+                stringfraction = stringfraction + "x^" + degree;
             }
 
         return stringfraction;

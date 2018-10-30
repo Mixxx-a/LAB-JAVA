@@ -2,6 +2,9 @@ public class LAB1 {
     public static void main(String[] args) {
 
         Rational zero = new Rational();
+        Rational one = new Rational(1, 1);
+        Rational minusone = new Rational(-1, 1);
+
         Rational first = new Rational(1, 2);
         Rational second = new Rational(1, 3);
         Rational third = new Rational(0, -5);
@@ -12,20 +15,20 @@ public class LAB1 {
         Rational eighth = new Rational(-36, -12);
         Rational ninth = new Rational(2, 1);
 
-        System.out.println("-15 / -4 is " + fifth);
-
+        System.out.println("15 / -4 is " + fifth);
+        /*
         // Testing output of Polinomial
         RationalList mySet1 = new RationalList(first);
         RationalList mySet2 = new RationalList(zero);
-        RationalList mySet3 = new RationalList();
-        mySet2.addFraction(second);
-        mySet2.addFraction(third);
+        RationalList mySet3 = new RationalList(zero);
+        mySet3.addFraction(one);
+        mySet3.addFraction(minusone);
         RationalList mySet4 = new RationalList();
-        mySet3.addFraction(fourth);
-        mySet3.addFraction(fifth);
-        mySet3.addFraction(sixth);
-        mySet3.addFraction(seventh);
-        mySet3.addFraction(fifth);
+        mySet4.addFraction(fourth);
+        mySet4.addFraction(fifth);
+        mySet4.addFraction(sixth);
+        mySet4.addFraction(seventh);
+        mySet4.addFraction(fifth);
 
         Polinomial myPolinom1 = new Polinomial(mySet1);
         Polinomial myPolinom2 = new Polinomial(mySet2);
@@ -35,9 +38,7 @@ public class LAB1 {
         System.out.println(myPolinom1);
         System.out.println(myPolinom2);
         System.out.println(myPolinom3);
-        System.out.println(myPolinom4);
-
-
+        System.out.println(myPolinom4); */
 
 
         /*
@@ -71,5 +72,7 @@ public class LAB1 {
         System.out.println("and then + 3rd polinom: " + myPolinom3);
         myPolinom1.addPolinom(myPolinom3);
         System.out.println("Answer : " + myPolinom1 ); */
+
+        System.out.println(new Polinomial(new RationalList()));
     }
 }

@@ -1,5 +1,5 @@
 
-public class Rational {
+public class Rational implements Comparable<Rational>{
     private int numerator;
     private int denomirator;
 
@@ -53,5 +53,13 @@ public class Rational {
         int gcd = Util.gcd(Math.abs(this.numerator), Math.abs(this.denomirator));
         this.numerator /= gcd;
         this.denomirator /= gcd;
+    }
+
+    @Override
+    public int compareTo(Rational other) {
+        if ((this.getNumerator() * other.getDenomirator()) > (other.getNumerator() * this.getDenomirator()))
+            return 1;
+        else
+            return -1;
     }
 }
