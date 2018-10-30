@@ -9,8 +9,7 @@ public class Rational {
     }
 
     public Rational(int num, int den) {
-        if ((num < 0) && (den < 0))
-        {
+        if (den < 0) {
             num = -num;
             den = -den;
         }
@@ -27,11 +26,11 @@ public class Rational {
         this.denomirator= Num;
     } */
 
-    private int getNumerator() {
+    int getNumerator() {
         return this.numerator;
     }
 
-    private int getDenomirator() {
+    int getDenomirator() {
         return this.denomirator;
     }
 
@@ -44,9 +43,13 @@ public class Rational {
         return (double)this.numerator / (double)this.denomirator;
     }
 
-    void plusFriction (Rational another) {
+    void plusRational(Rational another) {
         this.numerator = this.numerator * another.getDenomirator() + another.getNumerator() * this.getDenomirator();
         this.denomirator *= another.getDenomirator();
+        if (this.denomirator < 0) {
+            this.numerator *= -1;
+            this.denomirator *= -1;
+        }
         int gcd = Util.gcd(Math.abs(this.numerator), Math.abs(this.denomirator));
         this.numerator /= gcd;
         this.denomirator /= gcd;

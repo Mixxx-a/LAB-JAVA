@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class SetOfRational {
+public class RationalList {
     private ArrayList<Rational> rationallist;
 
-    public SetOfRational (Rational fraction) {
+    public RationalList(Rational fraction) {
         rationallist = new ArrayList<>(); //Explicit type argument <Rational>
         rationallist.add(fraction);
     }
 
-    public SetOfRational() {
+    public RationalList() {
         rationallist = new ArrayList<>();
     }
 
@@ -16,7 +16,7 @@ public class SetOfRational {
         return rationallist.size();
     }
 
-    Rational getFrictionI(int i) {
+    Rational getFractionI(int i) {
         return rationallist.get(i);
     }
 
@@ -32,7 +32,7 @@ public class SetOfRational {
         return ans;
     }
 
-    Rational maxFrictionInSet() {
+    Rational maxFractionInSet() {
         Rational Maximum = rationallist.get(0);
         for (int i = 1; i < rationallist.size(); i++) {
             if (rationallist.get(i).getValue() > Maximum.getValue()) {
@@ -42,7 +42,7 @@ public class SetOfRational {
         return Maximum;
     }
 
-    Rational minFrictionInSet() {
+    Rational minFractionInSet() {
         Rational Minimum = rationallist.get(0);
         for (int i = 1; i < rationallist.size(); i++) {
             if (rationallist.get(i).getValue() < Minimum.getValue()) {
@@ -52,9 +52,9 @@ public class SetOfRational {
         return Minimum;
     }
 
-    int higherThanFriction(Rational friction) {
+    int higherThanFraction(Rational fraction) {
         int counter = 0;
-        double value = friction.getValue();
+        double value = fraction.getValue();
         for (Rational item : rationallist) {  // using foreach
             if (item.getValue() > value)
                 counter++;
@@ -62,9 +62,9 @@ public class SetOfRational {
         return counter;
     }
 
-    int lowerThanFriction(Rational friction) {
+    int lowerThanFraction(Rational fraction) {
         int counter = 0;
-        double value = friction.getValue();
+        double value = fraction.getValue();
         for (int i = 0; i < rationallist.size(); i++) {  // using 'for'
             if (rationallist.get(i).getValue() < value)
                 counter++;
