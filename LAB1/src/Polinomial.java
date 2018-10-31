@@ -1,12 +1,14 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Polinomial {
-    private ArrayList<Rational> polinom;
+    private List<Rational> polinom;
+    // Indirection (GRASP patterns)
 
     public Polinomial(RationalList fractions) {
-        polinom = new ArrayList<Rational>();
+        polinom = new ArrayList<>();
         for (int i = 0; i < fractions.size(); i++) {
-            polinom.add(fractions.getFractionI(i));
+            polinom.add(fractions.get(i));
         }
     }
 
@@ -14,7 +16,7 @@ public class Polinomial {
         return polinom.size();
     }
 
-    Rational getFractionI(int i) {
+    Rational get(int i) {
         return polinom.get(i);
     }
 
@@ -23,14 +25,14 @@ public class Polinomial {
         String ans = "";
         boolean emptystringflag = true;
         if (this.size() > 0) {
-            ans += zeroDegreeFraction(this.getFractionI(0));
+            ans += zeroDegreeFraction(this.get(0));
             for (int i = 1; i < this.size(); i++) {
                 if (!(ans.equals("")))
                     emptystringflag = false;
-                ans += fractionInPolinom(this.getFractionI(i), i, emptystringflag);
+                ans += fractionInPolinom(this.get(i), i, emptystringflag);
             }
         }
-       return ans;
+       return "Pol{" + ans + "}";
     }
 
     private String zeroDegreeFraction (Rational fraction) {
@@ -90,12 +92,12 @@ public class Polinomial {
         int length1 = this.size(), length2 = anotherPol.size();
         int minlength = length1 > length2 ? length2 : length1;
         for (int i = 0; i < minlength; i++) {
-            this.getFractionI(i).plusRational(anotherPol.getFractionI(i));
+            this.get(i).plusRational(anotherPol.get(i));
         }
         if (minlength == length1) {
             for (int i = length1; i < anotherPol.size(); i++)
             {
-                polinom.add(anotherPol.getFractionI(i));
+                polinom.add(anotherPol.get(i));
             }
         }
 

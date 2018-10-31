@@ -41,7 +41,7 @@ public class LAB1 {
         System.out.println(myPolinom4); */
 
 
-        /*
+//        /*
         RationalList mySet1 = new RationalList();
         mySet1.addFraction(first);
         mySet1.addFraction(second);
@@ -71,7 +71,7 @@ public class LAB1 {
         System.out.println("Their summ: " +  myPolinom1);
         System.out.println("and then + 3rd polinom: " + myPolinom3);
         myPolinom1.addPolinom(myPolinom3);
-        System.out.println("Answer : " + myPolinom1 ); */
+        System.out.println("Answer : " + myPolinom1 );
 
         System.out.println(new Polinomial(new RationalList()));
     }

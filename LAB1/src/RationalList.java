@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class RationalList {
-    private ArrayList<Rational> rationallist;
+    private List<Rational> rationallist;
 
     public RationalList(Rational fraction) {
-        rationallist = new ArrayList<>(); //Explicit type argument <Rational>
+        rationallist = new ArrayList<Rational>(); //Explicit type argument <Rational>
         rationallist.add(fraction);
     }
 
@@ -16,7 +17,7 @@ public class RationalList {
         return rationallist.size();
     }
 
-    Rational getFractionI(int i) {
+    Rational get(int i) {
         return rationallist.get(i);
     }
 
