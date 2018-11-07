@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="4995cc72-7e4b-43f6-b453-f4ed5ec52b86" name="Default Changelist" comment="" />
+=======
     <list default="true" id="4995cc72-7e4b-43f6-b453-f4ed5ec52b86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,12 +89,13 @@
     <session id="-2026158021">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -155,8 +160,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LAB1.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="629">
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+=======
             <state relative-caret-position="799">
+<<<<<<< HEAD
               <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+=======
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+            <state relative-caret-position="799">
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
             </state>
           </provider>
         </entry>
@@ -185,6 +204,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Polinomial.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="340">
+              <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+=======
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
             <state relative-caret-position="306">
               <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding>
@@ -192,6 +218,10 @@
                 <element signature="e#365#366#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
               </folding>
+<<<<<<< HEAD
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
             </state>
           </provider>
         </entry>
@@ -239,6 +269,19 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,8 +298,18 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="AndroidView" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +371,19 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18638574" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -353,6 +418,20 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SetOfRational.txt" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/LAB1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rational.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+=======
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -363,24 +442,92 @@
     <entry file="file://$PROJECT_DIR$/src/LAB1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
+<<<<<<< HEAD
           <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rational.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+=======
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RationalList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+<<<<<<< HEAD
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+=======
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="2787" selection-start-line="2787" selection-end-line="2787" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LAB1.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+=======
+        <state relative-caret-position="-265">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="799">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rational.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="833">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+=======
+<<<<<<< HEAD
+=======
+        <state relative-caret-position="-265">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RationalList.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="119">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+        <state relative-caret-position="653">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+>>>>>>> 0686962742de49009ab133abf649082e26f02c91
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+<<<<<<< HEAD
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
         </state>
       </provider>
     </entry>
@@ -389,6 +536,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Polinomial.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="340">
+          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+=======
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
         <state relative-caret-position="306">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
@@ -398,6 +552,10 @@
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
+=======
+>>>>>>> ed8cc60d59c61a7d982a7caa3b38e342a7039bc5
         </state>
       </provider>
     </entry>
