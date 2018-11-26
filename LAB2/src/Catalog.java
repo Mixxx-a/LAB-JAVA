@@ -1,5 +1,7 @@
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class Catalog {
     private List<Album> albumsList;
@@ -20,14 +22,12 @@ public class Catalog {
 
     private ArrayList<Song> searchSongsSpecifiedGenre(String genre) {
         ArrayList<Song> searchedSongs = new ArrayList<Song>();
-
         for (Album albumfromlist : this.albumsList) {
-            for (Song currsong : albumfromlist.getSongs()){
+            for (Song currsong : albumfromlist.getSongs()) {
                 if (currsong.getGenreString().equals(genre))
                     searchedSongs.add(currsong);
             }
-    }
-
+        }
         return searchedSongs;
     }
 
@@ -39,23 +39,44 @@ public class Catalog {
                 searchedSongs.addAll(searchSongsSpecifiedGenre(childgenre.getData()));
             }
             return searchedSongs;
-        }
-        else
+        } else
             return searchSongsSpecifiedGenre(genre);
     }
 
+    public ArrayList<Song> searchForSongs(int year, MyNode treeGenres) {
+        ArrayList<Song> songList = new ArrayList<Song>();
+        for (Album albumfromlist : this.albumsList) {
+            for (Song currsong : albumfromlist.getSongs()) {
+                if (currsong.getYear() == year) {
+                    songList.add(currsong);
+                }
+            }
+        }
+        return songList;
+    }
 
-    public ArrayList<Artist> searchForArtists(String genre) {
-        ArrayList<Artist> artistList = new ArrayList<Artist>();
+    private ArrayList<Artist> searchArtistsSpecifiedGenre(String genre) {
+        ArrayList<Artist> searchedArtists = new ArrayList<Artist>();
         for (Album albumfromlist : this.albumsList) {
             for (Song currsong : albumfromlist.getSongs()) {
                 if (currsong.getGenreString().equals(genre)) {
-                    artistList.add(currsong.getArtist());
+                    searchedArtists.add(currsong.getSongArtist());
                     break;
                 }
             }
         }
+        return searchedArtists;
+    }
 
-        return artistList;
+    public ArrayList<Artist> searchForArtists(String genre, MyNode treeGenres) {
+        ArrayList<Artist> searchedArtists = searchArtistsSpecifiedGenre(genre);
+        if (Character.isUpperCase(genre.charAt(0))) {
+            MyNode parentGenre = treeGenres.searchNode(genre);
+            for (MyNode childgenre : parentGenre.getChildren()) {
+                searchedArtists.addAll(searchArtistsSpecifiedGenre(childgenre.getData()));
+            }
+        }
+        Set<Artist> setArtists = new LinkedHashSet<Artist>(searchedArtists);  //удалить повторяющихся исполнителей
+        return new ArrayList<Artist>(setArtists);
     }
 }

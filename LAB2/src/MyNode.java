@@ -17,7 +17,7 @@ public class MyNode {
         parentNode.children.add(childNode);
     }
 
-    public MyNode getChildI(int i) { //just for getting children from root, without search
+    public MyNode getChildI(int i) { //just for getting children from root, without search. for fast input of subgenres
         return this.children.get(i);
     }
 
