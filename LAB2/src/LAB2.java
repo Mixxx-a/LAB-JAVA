@@ -1,13 +1,13 @@
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class LAB2 {
     public static void main(String[] args) {
 
-        //Limitation: songs can be only in albums
-        //Genre starts with capital letter, subgenre - with small letter
+        //Ограничение: Жанры начинаются с большой буквы, а поджанры - с маленькой
 
-        // Creating genres DB
-        MyNode GenresTree = new MyNode("Genres");
+        // Создание базы жанров в виде 2-х уровневого дерева
+        GenreNode GenresTree = new GenreNode("Genres");
         GenresTree.addChild("POP", GenresTree);
         GenresTree.addChild("ROCK", GenresTree);
         GenresTree.addChild("RAP", GenresTree);
@@ -24,7 +24,6 @@ public class LAB2 {
         GenresTree.addChild("medieval", GenresTree.getChildI(3));
         GenresTree.addChild("baroque", GenresTree.getChildI(3));
 
-
         Artist artistEminem = new Artist("Eminem");
         Artist artistRammstein = new Artist("Rammstein");
         Artist artistEisbrecher = new Artist("Eisbrecher");
@@ -35,49 +34,54 @@ public class LAB2 {
         Song songRammstein2 = new Song("Ohne dich", GenresTree.searchNode("hard_rock"), artistRammstein, 2013);
         Song songEisbrecher1 = new Song("Verruckt", GenresTree.searchNode("hard_rock"), artistEisbrecher, 2015);
 
-        Album albumEminem1 = new Album("Kamikadze", artistEminem);
+        Album albumEminem1 = new Album("Kamikadze");
         albumEminem1.addSong(songEminem1);
         albumEminem1.addSong(songEminem2);
 
-        Album albumRammstein1 = new Album("Sonne", artistRammstein);
+        Album albumRammstein1 = new Album("Sonne");
         albumRammstein1.addSong(songRammstein1);
         albumRammstein1.addSong(songRammstein2);
 
-        Album albumEisbrecher = new Album("Eiskalt", artistEisbrecher);
+        Album albumEisbrecher = new Album("Eiskalt");
         albumEisbrecher.addSong(songEisbrecher1);
 
+        artistEminem.addAlbum(albumEminem1);
+        artistRammstein.addAlbum(albumRammstein1);
+        artistEisbrecher.addAlbum(albumEisbrecher);
+
         Catalog catalog = new Catalog();
-        catalog.addAlbum(albumEminem1);
-        catalog.addAlbum(albumRammstein1);
-        catalog.addAlbum(albumEisbrecher);
+        catalog.addArtist(artistEminem);
+        catalog.addArtist(artistRammstein);
+        catalog.addArtist(artistEisbrecher);
 
-        ArrayList<Song> ans1 = catalog.searchForSongs("RAP", GenresTree);    // 2 songs
-        for (Song item: ans1)
-            System.out.print(item.getName() + ", ");
-        System.out.println();
+        ArrayList<Song> ans1 = catalog.getSongsByGenre("RAP", GenresTree);    // 2 songs
+        System.out.println(ans1.stream().map(Song::getName).collect(Collectors.joining(", ")));
+        //for (Song item: ans1)
+       //     System.out.print(item.getName() + ", ");
+       // System.out.println();
 
-        ArrayList<Song> ans2 = catalog.searchForSongs("metal", GenresTree);  // 1 song
+        ArrayList<Song> ans2 = catalog.getSongsByGenre("metal", GenresTree);  // 1 song
         for (Song item: ans2)
             System.out.print(item.getName() + ", ");
         System.out.println();
 
-        ArrayList<Song> ans3 = catalog.searchForSongs("hard_rock", GenresTree);  // 2 song
+        ArrayList<Song> ans3 = catalog.getSongsByGenre("hard_rock", GenresTree);  // 2 song
         for (Song item: ans3)
             System.out.print(item.getName() + ", ");
         System.out.println();
 
-        ArrayList<Song> ans4 = catalog.searchForSongs("ROCK", GenresTree);  // 3 songs
+        ArrayList<Song> ans4 = catalog.getSongsByGenre("ROCK", GenresTree);  // 3 songs
         for (Song item: ans4)
             System.out.print(item.getName() + ", ");
         System.out.println();
         System.out.println();
 
-        ArrayList<Song> ans5 = catalog.searchForSongs(2005, GenresTree);  // 1 song
+        ArrayList<Song> ans5 = catalog.getSongsByYear(2005, GenresTree);  // 1 song
         for (Song item: ans5)
             System.out.print(item.getName() + ", ");
         System.out.println();
 
-        ArrayList<Song> ans6 = catalog.searchForSongs(2013, GenresTree);  // 2 songs
+        ArrayList<Song> ans6 = catalog.getSongsByYear(2013, GenresTree);  // 2 songs
         for (Song item: ans6)
             System.out.print(item.getName() + ", ");
         System.out.println();

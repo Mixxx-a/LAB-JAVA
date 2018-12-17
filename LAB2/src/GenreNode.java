@@ -1,27 +1,27 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyNode {
+public class GenreNode {
     private String data;
-    private MyNode parent;
-    private List<MyNode> children;
+    private GenreNode parent;
+    private List<GenreNode> children;
 
-    public MyNode(String data) {
+    public GenreNode(String data) {
         this.data = data;
-        this.children = new ArrayList<MyNode>();
+        this.children = new ArrayList<GenreNode>();
     }
 
-    public void addChild(String childData, MyNode parentNode) {
-        MyNode childNode = new MyNode(childData);
+    public void addChild(String childData, GenreNode parentNode) {
+        GenreNode childNode = new GenreNode(childData);
         childNode.parent = parentNode;
         parentNode.children.add(childNode);
     }
 
-    public MyNode getChildI(int i) { //just for getting children from root, without search. for fast input of subgenres
+    public GenreNode getChildI(int i) { //just for getting children from root, without search. for fast input of subgenres
         return this.children.get(i);
     }
 
-    public List<MyNode> getChildren() {
+    public List<GenreNode> getChildren() {
         return this.children;
     }
 
@@ -29,17 +29,17 @@ public class MyNode {
         return this.data;
     }
 
-    public MyNode searchNode(String name) {
+    public GenreNode searchNode(String name) {
         if (Character.isUpperCase(name.charAt(0))) {
-            for(MyNode node: children){
+            for(GenreNode node: children){
                 if (node.data.equals(name)) {
                     return node;
                 }
             }
         }
         else {
-            for(MyNode node: children){
-                for (MyNode childnode: node.children) {
+            for(GenreNode node: children){
+                for (GenreNode childnode: node.children) {
                     if (childnode.data.equals(name))
                         return childnode;
                 }

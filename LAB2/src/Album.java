@@ -3,13 +3,11 @@ import java.util.List;
 
 public class Album {
     private String nameAlbum;
-    private Artist artist;
     private List<Song> songs;
 
-    public Album (String name, Artist artist) {
+    public Album (String name) {
         this.nameAlbum = name;
-        this.artist = artist;
-        songs = new ArrayList<Song>();
+        this.songs = new ArrayList<Song>();
     }
 
     void addSong(Song song) {
@@ -19,6 +17,4 @@ public class Album {
     public List<Song> getSongs() {
         return this.songs;
     }
-
-
 }

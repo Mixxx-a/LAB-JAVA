@@ -1,10 +1,10 @@
 public class Song {
     private String songName;
-    private MyNode songGenre;
+    private GenreNode songGenre;
     private Artist songArtist;
     private int year;
 
-    public Song (String name, MyNode genre, Artist songArtist, int year) {
+    public Song (String name, GenreNode genre, Artist songArtist, int year) {
         this.songName = name;
         this.songGenre = genre;
         this.songArtist = songArtist;
