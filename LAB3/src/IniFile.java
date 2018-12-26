@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class FileParser {
+public class IniFile {
     private List<Section> sections = new ArrayList<Section>();
 
-    public FileParser (String fileName)
+    public IniFile(String fileName)
     {
         try {
             // проверка на формат файла
@@ -32,7 +32,7 @@ public class FileParser {
                     {
                         String newSectionName = line.substring(1, line.length() - 1);
                         // в line возвращается имя новой секции
-                        line = sectionParser(scanner, newSectionName);
+                        line = parseSection(scanner, newSectionName);
                     }
                 }
             }
@@ -55,7 +55,7 @@ public class FileParser {
     }
 
 
-    private String sectionParser (Scanner scan, String sectionName)
+    private String parseSection(Scanner scan, String sectionName)
     {
         Section section = new Section(sectionName);
 

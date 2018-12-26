@@ -4,29 +4,30 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class Catalog {
-    private List<Artist> artistsList;
-    private List<Compilation> compilationsList;
+    private List<Artist> artists;
+    private List<Compilation> compilations;
 
     public Catalog() {
-        this.artistsList = new ArrayList<>();
-        this.compilationsList = new ArrayList<>();
+        this.artists = new ArrayList<>();
+        this.compilations = new ArrayList<>();
     }
 
     public void addArtist(Artist artist) {
-        this.artistsList.add(artist);
+        this.artists.add(artist);
     }
 
     public void addCompilation(Compilation comp) {
-        this.compilationsList.add(comp);
+        this.compilations.add(comp);
     }
 
-    private ArrayList<Song> getSongsBySubgenre(String genre) {
+
+    private ArrayList<Song> getSongsBySubgenre(String genreName) {
         // поиск песни по поджанру
         ArrayList<Song> searchedSongs = new ArrayList<Song>();
-        for (Artist currArtist : this.artistsList) {
+        for (Artist currArtist : this.artists) {
             for (Album currAlbum : currArtist.getAlbums()) {
                 for (Song currSong : currAlbum.getSongs()) {
-                    if (currSong.getGenreString().equals(genre)) {
+                    if (currSong.getGenreString().equals(genreName)) {
                         searchedSongs.add(currSong);
                     }
                 }
@@ -35,23 +36,23 @@ public class Catalog {
         return searchedSongs;
     }
 
-    public ArrayList<Song> getSongsByGenre(String genre, GenreNode treeGenres) {
+    public ArrayList<Song> getSongsByGenre(String genreName, GenresRoot treeGenres) {
         // если жанр начинается с большой буквы - то это жанр, и надо проверить его поджанры
         // иначе просто поиск песен по данному поджару
-        if (Character.isUpperCase(genre.charAt(0))) {
-            GenreNode parentGenre = treeGenres.searchNode(genre);
-            ArrayList<Song> searchedSongs = getSongsBySubgenre(genre);
-            for (GenreNode childgenre : parentGenre.getChildren()) {
-                searchedSongs.addAll(getSongsBySubgenre(childgenre.getData()));
+        if (Character.isUpperCase(genreName.charAt(0))) {
+            GenreNode parentGenre = treeGenres.getGenreByString(genreName);
+            ArrayList<Song> searchedSongs = getSongsBySubgenre(genreName);
+            for (SubgenreNode childgenre : parentGenre.getSubgenres()) {
+                searchedSongs.addAll(getSongsBySubgenre(childgenre.getName()));
             }
             return searchedSongs;
         } else
-            return getSongsBySubgenre(genre);
+            return getSongsBySubgenre(genreName);
     }
 
-    public ArrayList<Song> getSongsByYear(int year, GenreNode treeGenres) {
+    public ArrayList<Song> getSongsByYear(int year, GenresRoot treeGenres) {
         ArrayList<Song> searchedSongs = new ArrayList<Song>();
-        for (Artist currArtist : this.artistsList) {
+        for (Artist currArtist : this.artists) {
             for (Album currAlbum : currArtist.getAlbums()) {
                 for (Song currSong : currAlbum.getSongs()) {
                     if (currSong.getYear() == year) {
@@ -65,11 +66,11 @@ public class Catalog {
 
     private ArrayList<Artist> getArtistsBySubgenre(String genre) {
         ArrayList<Artist> searchedArtists = new ArrayList<Artist>();
-        for (Artist currArtist : this.artistsList) {
+        for (Artist currArtist : this.artists) {
             for (Album currAlbum : currArtist.getAlbums()) {
                 for (Song currSong : currAlbum.getSongs()) {
                     if (currSong.getGenreString().equals(genre)) {
-                        searchedArtists.add(currSong.getSongArtist());
+                        searchedArtists.add(currSong.getArtist());
                         break;
                     }
                 }
@@ -78,12 +79,12 @@ public class Catalog {
         return searchedArtists;
     }
 
-    public ArrayList<Artist> searchForArtists(String genre, GenreNode treeGenres) {
-        ArrayList<Artist> searchedArtists = getArtistsBySubgenre(genre);
-        if (Character.isUpperCase(genre.charAt(0))) {
-            GenreNode parentGenre = treeGenres.searchNode(genre);
-            for (GenreNode childgenre : parentGenre.getChildren()) {
-                searchedArtists.addAll(getArtistsBySubgenre(childgenre.getData()));
+    public ArrayList<Artist> searchForArtists(String genreName, GenresRoot treeGenres) {
+        ArrayList<Artist> searchedArtists = getArtistsBySubgenre(genreName);
+        if (Character.isUpperCase(genreName.charAt(0))) {
+            GenreNode parentGenre = treeGenres.getGenreByString(genreName);
+            for (SubgenreNode childgenre : parentGenre.getSubgenres()) {
+                searchedArtists.addAll(getArtistsBySubgenre(childgenre.getName()));
             }
         }
         Set<Artist> setArtists = new LinkedHashSet<Artist>(searchedArtists);  //удалить повторяющихся исполнителей

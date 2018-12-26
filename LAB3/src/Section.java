@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Section {
-    private String sectionName;
+    private String name;
     private List<Parameter> parameterList = new ArrayList<Parameter>();
 
     public Section(String name) {
-        this.sectionName = name;
+        this.name = name;
     }
 
     public void add(Parameter p) {
@@ -14,7 +14,7 @@ public class Section {
     }
 
     public String getName() {
-        return this.sectionName;
+        return this.name;
     }
 
     protected Parameter getParameter(String parameterName) throws MyParameterNotFoundException {

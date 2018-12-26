@@ -2,15 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7be6e8-42d8-45c9-aeda-4bb5b74f0498" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LAB2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB2/src/GenresRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB2/src/SubgenreNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/LAB5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/AnnotatedClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/LAB5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/MyAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/XmlAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/XmlObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LAB5/src/XmlTag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/out/production/LAB2/GenreNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/out/production/LAB2/GenreNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/out/production/LAB2/LAB2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/out/production/LAB2/LAB2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/out/production/LAB2/Song.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB2/src/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB2/src/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/Artist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB2/src/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB2/src/GenreNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/GenreNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB2/src/LAB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/LAB2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB2/src/MyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/GenreNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LAB2/src/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB2/src/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB3/FileParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB3/LAB3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB3/LAB3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB3/Parameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB3/Parameter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAB3/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAB3/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IniFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Section.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +52,7 @@
     <session id="2095136766">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
@@ -40,6 +66,7 @@
           <entry key="iml" value="1" />
           <entry key="ini" value="12" />
           <entry key="java" value="9" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -47,17 +74,18 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="9" />
           <entry key="PLAIN_TEXT" value="12" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ini" value="8" />
-          <entry key="java" value="8464" />
+          <entry key="java" value="8495" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8464" />
+          <entry key="JAVA" value="8495" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -68,17 +96,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LAB3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+            <state relative-caret-position="459">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FileParser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IniFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="535">
+              <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Section.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#354#355#0" expanded="true" />
@@ -103,8 +131,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="-162">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MySectionNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+            <state>
+              <caret column="58" lean-forward="true" selection-start-column="58" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -181,16 +212,17 @@
         <option value="$PROJECT_DIR$/src/MyFileFormatException.java" />
         <option value="$PROJECT_DIR$/src/MyParameterNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/MyTypeConvertingExcepion.java" />
-        <option value="$PROJECT_DIR$/src/Section.java" />
-        <option value="$PROJECT_DIR$/src/Parameter.java" />
         <option value="$PROJECT_DIR$/src/MySectionNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/MyTypeConvertingException.java" />
-        <option value="$PROJECT_DIR$/src/FileParser.java" />
         <option value="$PROJECT_DIR$/src/LAB3.java" />
+        <option value="$PROJECT_DIR$/src/FileParser.java" />
+        <option value="$PROJECT_DIR$/src/Section.java" />
+        <option value="$PROJECT_DIR$/src/Parameter.java" />
+        <option value="$PROJECT_DIR$/src/IniFile.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -285,7 +317,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -293,13 +325,13 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12846482" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12846482" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.34164858" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49946696" weight="0.3308026" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49946696" weight="0.34501642" />
@@ -333,30 +365,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyTypeConvertingExcepion.java" />
-    <entry file="file://$PROJECT_DIR$/src/LAB3.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
+        <state relative-caret-position="-7640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyFileFormatException.java">
@@ -382,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MySectionNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+        <state>
+          <caret column="58" lean-forward="true" selection-start-column="58" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -401,12 +412,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileParser.java">
+    <entry file="file://$PROJECT_DIR$/src/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="-162">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LAB3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IniFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
           </folding>
         </state>
       </provider>

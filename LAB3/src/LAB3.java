@@ -1,10 +1,10 @@
 public class LAB3 {
     public static void main(String[] args) {
-        // класс FileParser парсит .ini файл на массив секций
-        FileParser parsedFile = new FileParser("test.ini");
+        // класс IniFile парсит .ini файл на массив секций
+        IniFile parsedFile = new IniFile("test.ini");
 
         // проверка ошибки FileFormat
-        FileParser parsedFileError = new FileParser("test.txt");
+        IniFile parsedFileError = new IniFile("test.txt");
 
         int int1 = parsedFile.getIntValue("COMMON", "LogNCMD");
         int int2 = parsedFile.getIntValue("COM", "LogNCMD");

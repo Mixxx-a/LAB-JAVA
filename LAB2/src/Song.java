@@ -1,26 +1,26 @@
 public class Song {
-    private String songName;
-    private GenreNode songGenre;
-    private Artist songArtist;
+    private String name;
+    private SubgenreNode genre;
+    private Artist artist;
     private int year;
 
-    public Song (String name, GenreNode genre, Artist songArtist, int year) {
-        this.songName = name;
-        this.songGenre = genre;
-        this.songArtist = songArtist;
+    public Song (String name, SubgenreNode genre, Artist artist, int year) {
+        this.name = name;
+        this.genre = genre;
+        this.artist = artist;
         this.year = year;
     }
 
     public String getName() {
-        return this.songName;
+        return this.name;
     }
 
     public String getGenreString() {
-        return songGenre.getData();
+        return this.genre.getName();
     }
 
-    public Artist getSongArtist() {
-        return this.songArtist;
+    public Artist getArtist() {
+        return this.artist;
     }
 
     public int getYear() {
