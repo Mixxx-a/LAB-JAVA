@@ -6,5 +6,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface XmlAttribute {
+    String tag() default "default";
+    String name() default "default";
 
 }
